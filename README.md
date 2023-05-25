@@ -40,6 +40,7 @@ git clone https://github.com/SEAbdulbasit/MusicApp-KMP.git
   On iOS, there are issues with the callbacks for `onReady` and `onVideoCompleted`
   which is causing the player to not start automatically. I was unable to configure the callbacks but hopefully, will be
   fixing that soon.
+  curl -X POST "https://accounts.spotify.com/api/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=a480ed41552540fe9afbb2a0e8939653&client_secret=24dd0d77c1e04155aa48cd7df8e17ab7"
 
 ## Demo
 

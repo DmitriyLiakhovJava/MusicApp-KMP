@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    kotlin("native.cocoapods")
+//    kotlin("native.cocoapods")
     kotlin("plugin.serialization")
     id("com.android.library")
     id("kotlin-parcelize")
@@ -40,21 +40,21 @@ kotlin {
         }
     }
 
-    cocoapods {
-        summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
-        version = "1.0"
-        ios.deploymentTarget = "14.1"
-        podfile = project.file("../iosApp/Podfile")
-        framework {
-            baseName = "shared"
-            isStatic = true
-            export("com.arkivanov.decompose:decompose:1.0.0-compose-experimental")
-            export("com.arkivanov.essenty:lifecycle:1.0.0")
-        }
-        extraSpecAttributes["resources"] =
-            "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
-    }
+//    cocoapods {
+//        summary = "Some description for the Shared Module"
+//        homepage = "Link to the Shared Module homepage"
+//        version = "1.0"
+//        ios.deploymentTarget = "14.1"
+//        podfile = project.file("../iosApp/Podfile")
+//        framework {
+//            baseName = "shared"
+//            isStatic = true
+//            export("com.arkivanov.decompose:decompose:1.0.0-compose-experimental")
+//            export("com.arkivanov.essenty:lifecycle:1.0.0")
+//        }
+//        extraSpecAttributes["resources"] =
+//            "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
+//    }
 
     sourceSets {
         val commonMain by getting {

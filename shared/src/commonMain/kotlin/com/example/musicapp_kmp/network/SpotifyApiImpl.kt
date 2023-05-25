@@ -20,7 +20,7 @@ class SpotifyApiImpl : SpotifyApi {
     override suspend fun getTopFiftyChart(): TopFiftyCharts {
         return client.get {
             headers {
-                sptifyEndPoint("v1/playlists/37i9dQZEVXbMDoHDwVN2tF")
+                sptifyEndPoint("v1/playlists/3cEYpjA9oz9GiPac4AsH4n")
             }
         }.body()
     }
